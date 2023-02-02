@@ -207,11 +207,16 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar a:hover,
 .navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
+.navbar .active:focus {
   color: var(--mcs-secondary-color);
+  font-weight: bolder;
+}
+
+.navbar a:hover,
+.navbar li:hover > a {
+  color: var(--mcs-secondary-color);
+  font-weight: normal;
 }
 
 .navbar .getstarted,
@@ -229,6 +234,7 @@ h6 {
 .navbar .getstarted:focus:hover {
   color: var(--mcs-bg-color);
   background: var(--mcs-secondary-color);
+  font-weight: 600;
 }
 
 .navbar .dropdown ul {
