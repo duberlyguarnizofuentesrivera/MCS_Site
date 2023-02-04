@@ -40,18 +40,29 @@
 <body>
 
 <!-- ======= Header ======= -->
-<header class="fixed-top header-inner-pages" id="header">
+<header class="fixed-top " id="header">
     <div class="container d-flex align-items-center">
-        <a class="logo me-auto" href="index.html"><img alt="" class="img-fluid"
-                                                       src="assets/img/logo/logo_name_white.png"></a>
+        <a class="logo me-auto" href="index.html">
+            <!--            <img alt="" class="img-fluid" src="assets/img/logo/logo_name_white.png">-->
+            <i class="bx bx-phone-call"></i> 813-205-1999<br>
+            <i class="bi bi-envelope"></i> info@mcs-techsolutions.com<br>
+        </a>
 
         <nav class="navbar" id="navbar">
             <ul>
-                <li><a class="nav-link scrollTo active" href="index.html#hero">Home</a></li>
-                <li><a class="nav-link scrollTo" href="index.html#about">About</a></li>
-                <li><a class="nav-link scrollTo" href="index.html#services">Services</a></li>
-                <li><a class="nav-link scrollTo" href="index.html#contact">Contact</a></li>
-                <li><a class="getstarted scrollTo" href="index.html#about">Free IT Status Assessment</a></li>
+                <!--                <li><a class="nav-link scrollTo active" href="#hero">Home</a></li>-->
+                <!--                <li><a class="nav-link scrollTo" href="#about">About</a></li>-->
+                <!--                <li><a class="nav-link scrollTo" href="#services">Services</a></li>-->
+
+                <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="getstarted scrollTo" href="contact.html">Chat With Us</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -102,61 +113,11 @@
 <!-- ======= Footer ======= -->
 <footer id="footer">
 
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6 footer-contact">
-                    <img alt="MCS logo" src="assets/img/logo/logo_name.png"><br>
-                    <p>
-                        MCS Technical Solutions Corporation<br>
-                        Sun City Center<br>
-                        Florida, FL 33571-6171<br>
-                        United States <br><br>
-                        <strong>Phone:</strong> 813-205-1999<br>
-                        <strong>Email:</strong> info@mcs-techsolutions.com<br>
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">About us</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Services</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="conditions.html">Terms of service</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Privacy policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="service-it.html">IT Services</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="service-network.html">Networking</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="service-comms.html">Communications</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="service-cloud.html">Cloud Infrastructure</a>
-                        </li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="service-sec.html">Cyber-Security</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Our Social Networks</h4>
-                    <p>Keep in touch... we are fun!</p>
-                    <div class="social-links mt-3">
-                        <a class="twitter" href="#"><i class="bx bxl-twitter"></i></a>
-                        <a class="linkedin" href="#"><i class="bx bxl-linkedin"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
     <div class="container footer-bottom clearfix">
         <div class="copyright">
-            &copy; Copyright 2023<strong><span>MCS Technical Solutions Corporation</span></strong>. All Rights Reserved
+            <p>Read our <a href="privacy.html"><b>Privacy Police</b></a></p>
+            &copy; Copyright 2023<strong><span> MCS Technical Solutions Corporation</span></strong>. All Rights
+            Reserved.
         </div>
     </div>
 </footer><!-- End Footer -->
