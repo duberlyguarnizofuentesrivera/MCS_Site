@@ -170,7 +170,7 @@ h2 {
     border-bottom: 2px dashed var(--mcs-primary-color);
     width: 85%;
     transform: translateX(-50%);
-    bottom: -15px;
+    bottom: 0;
     left: 50%;
 }
 
@@ -620,7 +620,7 @@ h2 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-    padding: 60px 0;
+    padding: 40px 0;
     overflow: hidden;
 }
 
@@ -2053,4 +2053,30 @@ footer .footer-top {
 
 .boxed-list-container{
     display: contents;
+}
+.divider:before{
+    position: absolute;
+    content: '';
+    border-bottom: 2px dashed var(--mcs-primary-color);
+    width: 25%;
+    transform: translateX(-25%);
+    left: 25%;
+}
+.divider:after{
+    position: absolute;
+    content: '';
+    border-bottom: 2px dashed var(--mcs-primary-color);
+    width: 25%;
+    transform: translateX(25%);
+    left: 50%;
+}
+.divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rosbed", "Jost", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--mcs-secondary-color);
+    letter-spacing: 2px;
 }
