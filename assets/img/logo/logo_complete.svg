@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.23 110.33">
+    <defs>
+        <style>
+            .a,.d{fill:#00b3be;}.b,.c,.g{fill:#6154a4;}.c{font-size:23.74px;}.c,.d{font-family:Rosbed;}.d{font-size:15.83px;letter-spacing:0.1em;}.e{letter-spacing:-0.06em;}.f{letter-spacing:0.1em;}.g{font-size:14.75px;font-family:CascadiaMono-Bold,
+            Cascadia
+            Mono;font-weight:700;}.h{letter-spacing:0.1em;}.i{letter-spacing:-0.06em;}.j{font-family:CascadiaMono-SemiBold,
+            Cascadia Mono;font-weight:600;letter-spacing:0.1em;}
+        </style>
+    </defs>
+    <path class="a"
+          d="M35.36,58A27.69,27.69,0,1,1,47.45,5.36,30.26,30.26,0,1,0,30.26,60.53a30.08,30.08,0,0,0,17.19-5.36A27.53,27.53,0,0,1,35.36,58Z"/>
+    <path class="b"
+          d="M33.94,52.91c11.55,0,20.92-10.14,20.92-22.65S45.49,7.61,33.94,7.61a19.53,19.53,0,0,0-9.15,2.28,21.54,21.54,0,0,1,13-4.38c12.63,0,22.87,11.08,22.87,24.75S50.42,55,37.79,55a21.61,21.61,0,0,1-13-4.38A19.53,19.53,0,0,0,33.94,52.91Z"/>
+    <text class="c" transform="translate(10.88 38.55)">MCS</text>
+    <text class="d" transform="translate(71.29 13.6)">TECHNICAL
+        <tspan x="0" y="18.99">SOLUTIONS</tspan>
+        <tspan class="b">
+            <tspan x="0" y="37.99">CORPOR</tspan>
+            <tspan class="e" x="60.95" y="37.99">A</tspan>
+            <tspan class="f" x="68.25" y="37.99">TION</tspan>
+        </tspan>
+    </text>
+    <text class="g" transform="translate(33.87 92.14)">
+        <tspan class="h">I</tspan>
+        <tspan x="10.12" y="0">T</tspan>
+        <tspan class="i" x="18.76" y="0"></tspan>
+        <tspan class="j" x="26.54" y="0">Partners</tspan>
+    </text>
+    <path class="a"
+          d="M100.31,97.77c-13.69.75-27.24,2.52-36.87,5.42-.7.26-1.65-.69-2-1.8s0-2.37.64-2.53c10-3,24.24-4.23,38.56-4.28l-.37,3.19Zm38.19.72a236.38,236.38,0,0,0-38.19-.72l.37-3.19a247.32,247.32,0,0,1,38,2.62c.2,0,.19.36.15.68s-.1.63-.3.61Z"/>
+    <path class="b"
+          d="M102.16,104.15c-11.43,1-22.78,3-30.86,6.13-.59.28-1.37-.66-1.6-1.76s.07-2.36.58-2.53c8.36-3.19,20.3-4.69,32.25-5l-.37,3.19Zm31.84,0a166.1,166.1,0,0,0-31.84,0l.37-3.19a171.57,171.57,0,0,1,31.62,1.89c.17,0,.15.35.11.67s-.1.63-.26.61Z"/>
+</svg>
