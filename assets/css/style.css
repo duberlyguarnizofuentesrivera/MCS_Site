@@ -162,12 +162,16 @@ h2 {
     transition: all 0.5s;
     z-index: 997;
     padding: 15px 0;
-    border-color: var(--mcs-primary-color);
-    border-width: 2px;
-    border-style: dashed;
-    border-radius: 15px;
+    /*border-color: var(--mcs-primary-color);*/
+    /*border-width: 2px;*/
+    /*border-style: dashed;*/
+    /*border-radius: 15px;*/
     margin: 20px;
     background: white;
+}
+
+.header-divider {
+
 }
 
 #header:after {
@@ -197,7 +201,7 @@ h2 {
     font-size: 0.9em;
     margin: 0;
     padding: 0;
-    line-height: 1;
+    line-height: 1.4;
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -240,7 +244,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: bold;
     color: var(--mcs-secondary-color);
     white-space: nowrap;
@@ -974,7 +978,7 @@ section.sm {
     padding: 0.5em;
 }
 
-.services .icon-box {
+.icon-box {
     /*box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);*/
     object-fit: contain;
     width: 100%;
@@ -983,18 +987,25 @@ section.sm {
     padding: 8px 6px;
     transition: all ease-in-out 0.4s;
     background: linear-gradient(227deg, rgba(var(--mcs-primary-color-rgb), 0.1), rgba(var(--mcs-secondary-color-rgb), 0.1));
-    border: 2px var(--mcs-primary-color);
+    border: 1px var(--mcs-secondary-color);
+    border-style: solid;
     text-align: left;
     border-radius: 15px;
     position: relative;
 }
 
-.services .icon-box:hover {
+.icon-box.small-box {
+    height: auto;
+    aspect-ratio: auto;
+    margin-top: 5px;
+}
+
+.icon-box:hover {
     /*border: 2px dashed var(--mcs-secondary-color);*/
     background: linear-gradient(134deg, rgba(var(--mcs-primary-color-rgb), 0.2), rgba(var(--mcs-secondary-color-rgb), 0.2));
 }
 
-.services .icon-box:hover img {
+.icon-box:hover img {
     /*filter: brightness(95%);*/
 }
 
@@ -1002,17 +1013,17 @@ section.sm {
     font-weight: bolder;
 }
 
-.services .icon-box .icon {
+.icon-box .icon {
     margin-bottom: 10px;
 }
 
-.services .icon-box .icon i {
+.icon-box .icon i {
     color: var(--mcs-secondary-color);
     font-size: 36px;
     transition: 0.3s;
 }
 
-.services .icon-box h4 {
+.icon-box h4 {
     font-weight: 500;
     margin-bottom: 5px;
     font-size: 24px;
@@ -1022,7 +1033,7 @@ section.sm {
     width: 100%;
 }
 
-.services .icon-box h4 a {
+.icon-box h4 a {
     /*color: var(--mcs-primary-color);*/
     transition: ease-in-out 0.3s;
     font-size: 0.6em;
@@ -1031,7 +1042,7 @@ section.sm {
     -webkit-text-fill-color: transparent;
 }
 
-.services .icon-box .service-description {
+.icon-box .service-description {
     line-height: 24px;
     font-size: 1em;
     margin-bottom: 0;
@@ -1056,7 +1067,7 @@ section.sm {
     padding-top: 1em;
 }
 
-.services .icon-box:hover .service-description {
+.icon-box:hover .service-description {
     visibility: visible;
     opacity: 0.9;
     max-height: 100%;
@@ -1065,12 +1076,12 @@ section.sm {
     transition: visibility 0s, max-height 0.5s ease-in-out, height 0.5s;
 }
 
-.services .icon-box img {
+.icon-box img {
     display: flex;
     justify-content: center;
 }
 
-.services .icon-box:hover h4 a {
+.icon-box:hover h4 a {
     /*color: var(--mcs-secondary-color);*/
     background: -webkit-linear-gradient(45deg, var(--mcs-secondary-color), var(--mcs-primary-color));
     -webkit-background-clip: text;
@@ -1924,12 +1935,12 @@ section.sm {
 #footer {
     font-size: 14px;
     /*background: var(--mcs-primary-color);*/
-    border-color: var(--mcs-primary-color);
-    border-width: 2px;
-    border-style: dashed;
-    border-radius: 15px;
-    margin: 10px 20px;
-    background: white;
+    /*border-color: var(--mcs-primary-color);*/
+    /*border-width: 2px;*/
+    /*border-style: dashed;*/
+    /*border-radius: 15px;*/
+    /*margin: 10px 20px;*/
+    /*background: white;*/
 }
 
 #footer:before {
@@ -2096,8 +2107,8 @@ footer .footer-top {
 }
 
 #footer .footer-bottom {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: var(--mcs-secondary-color);
 }
 
@@ -2205,7 +2216,7 @@ footer .footer-top {
 }
 
 .logo-img {
-    width: 80%;
+    width: 100%;
     min-width: 80px;
     height: auto;
 }
@@ -2223,3 +2234,25 @@ footer .footer-top {
     /*background-attachment: fixed;*/
     /*background-size: cover;*/
 }
+
+.border-with-image {
+    border-width: 2rem;
+    border-style: dotted;
+    border-color: transparent;
+    border-image-source: url("../img/mcs_border_thinner_transparent.svg");
+    border-image-repeat: stretch;
+    border-image-slice: 100;
+}
+
+/*TODO:
+/*footer and header*/
+/*add more text to services*/
+/*move logo a little up ---no! ask when online*/
+/*make services container bigger ---when online*/
+/*ask if phone and email are correct size/bold ---when online*/
+/*                                        fix "services"*/
+/*move navigation on services to the right... eliminate space*/
+/*add heavy border to service description*/
+/*add contr5ats to text in service description*/
+/*keep the screen with no scrolling....*/
+/*reduce size of footer and header*/
