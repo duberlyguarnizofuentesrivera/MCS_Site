@@ -162,10 +162,6 @@ h2 {
     transition: all 0.5s;
     z-index: 997;
     padding: 15px 0;
-    /*border-color: var(--mcs-primary-color);*/
-    /*border-width: 2px;*/
-    /*border-style: dashed;*/
-    /*border-radius: 15px;*/
     margin: 20px;
     background: white;
 }
@@ -1035,7 +1031,7 @@ section.sm {
 
 .icon-box h4 a {
     /*color: var(--mcs-primary-color);*/
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.4s;
     font-size: 0.6em;
     background: -webkit-linear-gradient(45deg, var(--mcs-primary-color), var(--mcs-secondary-color));
     -webkit-background-clip: text;
@@ -2239,9 +2235,19 @@ footer .footer-top {
     border-width: 2rem;
     border-style: dotted;
     border-color: transparent;
-    border-image-source: url("../img/mcs_border_thinner_transparent.svg");
+    border-image-source: url("../img/mcs_border_single.svg");
     border-image-repeat: stretch;
     border-image-slice: 100;
+}
+
+.bordered{
+    padding: 14px 10px;
+    border-width: 2px;
+    border-left: 0;
+    border-right: 0;
+    border-color: var(--mcs-secondary-color);
+    border-style: solid;
+    /*border-radius: 15px;*/
 }
 
 /*TODO:
