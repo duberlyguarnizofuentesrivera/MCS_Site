@@ -98,8 +98,8 @@ nav {
 }
 
 .box span.box-description {
-    line-height: 24px;
-    font-size: 1em;
+    line-height: 20px;
+    font-size: 0.9em;
     margin-bottom: 0;
     bottom: 0;
     max-height: 0;
@@ -111,21 +111,86 @@ nav {
     font-family: sans-serif;
     opacity: 0;
     visibility: hidden;
-    border-radius: 15px;
+    border-radius: 1em;
     padding: 0.5em;
+}
+
+.box:hover h4 span {
+    background: -webkit-linear-gradient(45deg, var(--mcs-secondary-color), var(--mcs-primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .box:hover > span.box-description {
     visibility: visible;
     opacity: 0.9;
     max-height: 100%;
-    height: 50%;
-    transition: visibility 0.5s, max-height 0.5s ease-in-out, height 0.5s;
+    height: 70%;
+    transition: visibility 1s; /*max-height 0.5s ease-in-out, height 0.5s*/
+}
+
+.box img {
+    max-width: 300px;
+}
+
+
+.offcanvas.offcanvas-bottom {
+    height: 70vh;
+}
+
+.btn-gradient {
+    display: flex;
+    justify-content: center;
+    transition: all ease 0.2s;
+    background: linear-gradient(227deg, rgba(var(--mcs-primary-color-rgb), 0.2), rgba(var(--mcs-secondary-color-rgb), 0.2));
+    border: 1px var(--mcs-secondary-color);
+    border-style: solid;
+    text-align: center;
+    border-radius: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.btn-gradient:hover {
+    /*border: 2px var(--mcs-secondary-color);*/
+}
+
+.btn-gradient h4 {
+    font-weight: 500;
+    padding: 0 10px;
+    text-align: center;
+    background: #fff;
+    border-radius: 0.7em;
+    margin: 0 0 5px 0;
+    width: 100%;
+}
+
+.btn-gradient:hover h4 {
+    /*background: #fcfcfc;*/
+}
+
+.btn-gradient:hover h4 span {
+    background: -webkit-linear-gradient(45deg, var(--mcs-secondary-color), var(--mcs-primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-gradient span {
+    transition: all ease 0.2s;
+    font-size: 0.7em;
+    background: -webkit-linear-gradient(45deg, var(--mcs-primary-color), var(--mcs-secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 993px) {
     .box {
-        margin: 0;
+        /*margin: 0;*/
+    }
+
+    .btn-gradient span {
+        font-size: 0.6em;
     }
 }
 
@@ -151,40 +216,4 @@ nav {
         display: none;
         height: 0;
     }
-}
-
-.offcanvas.offcanvas-bottom {
-    height: 70vh;
-}
-
-.btn-gradient {
-    display: flex;
-    justify-content: center;
-    transition: all ease 0.2s;
-    background: linear-gradient(227deg, rgba(var(--mcs-primary-color-rgb), 0.2), rgba(var(--mcs-secondary-color-rgb), 0.2));
-    border: 1px var(--mcs-secondary-color);
-    border-style: solid;
-    text-align: center;
-    border-radius: 1em;
-    cursor: pointer;
-    text-decoration: none;
-    height: fit-content;
-}
-
-.btn-gradient h4 {
-    font-weight: 500;
-    padding: 0 10px;
-    text-align: center;
-    background: #fff;
-    border-radius: 0.7em;
-    margin: 0 0 5px 0;
-    width: 100%;
-}
-
-.btn-gradient span {
-    transition: all ease 0.2s;
-    font-size: 0.7em;
-    background: -webkit-linear-gradient(45deg, var(--mcs-primary-color), var(--mcs-secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
