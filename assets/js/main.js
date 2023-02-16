@@ -254,4 +254,12 @@
     });
   });
 
+  const iconBoxes = document.querySelectorAll(".icon-box");
+  for (const box of iconBoxes) {
+    box.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.location.href = box.children[0].children[0].getAttribute("href");
+    })
+  }
+
 })()

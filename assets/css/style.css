@@ -240,7 +240,7 @@ h2 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
     padding: 0;
@@ -376,7 +376,7 @@ h2 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
     color: var(--mcs-secondary-color);
@@ -1012,6 +1012,7 @@ section.sm {
     text-align: left;
     border-radius: 15px;
     position: relative;
+    cursor: pointer;
 }
 
 .icon-box.small-box {
@@ -2359,7 +2360,14 @@ footer .footer-top {
 /*ask if phone and email are correct size/bold ---when online*/
 /*                                        fix "services"*/
 /*move navigation on services to the right... eliminate space*/
-/*add heavy border to service description*/
+/*add heavy border to service description DONE*/
 /*add contr5ats to text in service description*/
 /*keep the screen with no scrolling.... DONE*/
 /*reduce size of footer and header DONE*/
+/*- servicios cybersecurity se mueve la pantalla cuando hay hover en cuadro*/
+/*- que el cuadro sea todo link y no solo el titulo (servicios)*/
+/*- servicios individuales quitar texto (Peter lo va a pasar)*/
+/*- texto politicas quitarlo (Peter lo va a pasar)*/
+/*- texto historia quitarlo (Peter lo va a pasar)*/
+/*- lineas de header y footer -> en main coincide pero en otros como laptop no se amolda al tamaño*/
+/*- en celular, principal debe usar listado para servicios y no cajas*/
