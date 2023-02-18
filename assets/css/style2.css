@@ -1,8 +1,8 @@
 :root {
-    --mcs-primary-color: rgb(15, 181, 191);
-    --mcs-primary-color-rgb: 15, 181, 191;
-    --mcs-secondary-color: rgb(96, 84, 164);
-    --mcs-secondary-color-rgb: 96, 84, 164;
+    --mcs-primary-color: rgb(0, 179, 190);
+    --mcs-primary-color-rgb: 0, 179, 190;
+    --mcs-secondary-color: rgb(97, 84, 164);
+    --mcs-secondary-color-rgb: 97, 84, 164;
     --mcs-accent-color: rgb(233, 236, 239);
     --mcs-accent-color-rgb: 233, 236, 239;
     --mcs-text-color: rgb(68, 68, 68);
@@ -33,6 +33,16 @@ body {
 h4 {
     font-family: "Rosbed", "Jost", sans-serif;
     letter-spacing: 0.1em;
+}
+
+a {
+    color: var(--mcs-secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--mcs-secondary-color);
+    text-decoration: none;
 }
 
 nav {
@@ -74,27 +84,76 @@ nav {
 }
 
 .content {
-    padding: 15vh 0;
+    padding: 12vh 0 5vh 0;
     overflow: hidden;
 }
 
 .img-logo {
-    width: 70% !important;
+    height: 20vh !important;
     max-width: 350px;
 }
 
+.header-active {
+    background: linear-gradient(45deg, var(--mcs-primary-color), var(--mcs-secondary-color));
+    border-color: var(--mcs-primary-color);
+    border-radius: 1em;
+    border-style: none;
+}
+
+.header-active a, .header-active .offcanvas-body a {
+    color: white;
+}
+
+.header-active .offcanvas-body .dropdown-item {
+    color: var(--mcs-secondary-color);
+}
+
+.header-active .btn-gradient {
+    border: 1px var(--mcs-bg-color) solid;
+}
+
+.header-active .navbar-toggler {
+    color: var(--mcs-bg-color);
+    border: 1px solid var(--mcs-bg-color);
+}
+
+#footer {
+    border-color: var(--mcs-secondary-color);
+    border-width: 1px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 2vh 0;
+    /*border-style: solid;*/
+}
+
+#footer nav {
+    background: linear-gradient(227deg, rgba(var(--mcs-primary-color-rgb), 1), rgba(var(--mcs-secondary-color-rgb), 1));
+    padding: 0 !important;
+    margin: 0;
+    border-style: none;
+}
+
+#footer .container-fluid p {
+    margin-top: revert !important;
+}
+
+#footer a {
+    color: var(--mcs-bg-color);
+    text-decoration: underline;
+}
 
 .box {
     transition: all ease 0.2s;
     background: linear-gradient(227deg, rgba(var(--mcs-primary-color-rgb), 0.1), rgba(var(--mcs-secondary-color-rgb), 0.1));
     border: 1px var(--mcs-secondary-color);
     border-style: solid;
-    text-align: left;
     border-radius: 15px;
     position: relative;
     cursor: pointer;
     padding: 5px;
-    margin: 5px 10px;
+    text-align: center;
+    /*margin: 5px 10px;*/
 }
 
 .box span.box-description {
@@ -135,14 +194,16 @@ nav {
 
 
 .offcanvas.offcanvas-bottom {
-    height: 70vh;
+    height: 85vh;
+    border-radius: 1em 1em 0 0;
+    padding: 3vw;
 }
 
 .btn-gradient {
     display: flex;
     justify-content: center;
     transition: all ease 0.2s;
-    background: linear-gradient(227deg, rgba(var(--mcs-primary-color-rgb), 0.2), rgba(var(--mcs-secondary-color-rgb), 0.2));
+    background: linear-gradient(227deg, rgba(var(--mcs-primary-color-rgb), 0.3), rgba(var(--mcs-secondary-color-rgb), 0.3));
     border: 1px var(--mcs-secondary-color);
     border-style: solid;
     text-align: center;
@@ -162,7 +223,7 @@ nav {
     text-align: center;
     background: #fff;
     border-radius: 0.7em;
-    margin: 0 0 5px 0;
+    margin: 0 0 4px 0;
     width: 100%;
 }
 
@@ -184,9 +245,97 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
+/*OffCanvas Services*/
+.offcanvas-title {
+    font-size: 1.5em;
+    background: -webkit-linear-gradient(225deg, var(--mcs-primary-color), var(--mcs-secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.offcanvas-body img {
+    height: 30vh;
+    width: auto;
+    max-height: 175px;
+    text-align: center;
+}
+
+.contact-info {
+    background: var(--mcs-bg-color);
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
+    /*border: 1px solid var(--mcs-secondary-color);*/
+}
+
+.contact-form {
+    background: var(--mcs-bg-color);
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
+    /*border: 1px solid var(--mcs-secondary-color);*/
+}
+
+.contact-info i {
+    font-size: 20px;
+    color: var(--mcs-bg-color);
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: var(--mcs-secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-info h5 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--mcs-primary-color);
+}
+
+.contact-info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    /*color: #6182ba;*/
+}
+
+.contact-form .form-group {
+    padding-bottom: 0.7em;
+}
+
+.logo-container {
+    position: relative;
+    padding: 1em;
+    margin: 0 2em;
+}
+
+.logo-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    border: 5px solid transparent;
+    background: linear-gradient(45deg, var(--mcs-secondary-color), var(--mcs-primary-color)) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+}
+
 @media (min-width: 993px) {
     .box {
         /*margin: 0;*/
+    }
+
+    .box img {
+        max-width: 175px;
     }
 
     .btn-gradient span {
@@ -215,5 +364,40 @@ nav {
         visibility: hidden;
         display: none;
         height: 0;
+    }
+}
+
+@media (max-height: 768px) and (orientation: landscape) {
+    .box img {
+        max-width: 140px;
+    }
+
+    .img-logo {
+        width: 50% !important;
+    }
+
+    .content {
+        padding: 15vh 0 5vh 0;
+    }
+
+}
+
+@media (max-height: 576px) and (orientation: landscape) {
+    .box {
+        border-style: none;
+        padding: 0;
+    }
+
+    .box img {
+        visibility: hidden;
+        display: none;
+    }
+
+    .content {
+        padding: 25vh 0 5vh 0;
+    }
+
+    .img-logo {
+        height: 35vh !important;
     }
 }
